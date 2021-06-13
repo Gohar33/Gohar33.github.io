@@ -32,9 +32,6 @@ body{
 .showcase:before{
     content:'';
     background:url("https://cdn.dribbble.com/users/3614863/screenshots/6511060/d88abb60812877.5a59fb5224959.png") no-repeat center center/cover;
-    background:url("https://ak.picdn.net/shutterstock/videos/1022384530/thumb/1.jpg") no-repeat center center/cover;
-    background:url("https://cdn.dribbble.com/users/3614863/screenshots/6511060/d88abb60812877.5a59fb5224959.png") no-repeat center center/cover;
-    /* background: url("https://images.unsplash.com/photo-1569467869790-f11ae1eb2f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80") no-repeat center center/cover; */
     position:absolute;
     top:0;
     left:0;
@@ -53,11 +50,35 @@ z-index:-1;
 }
 
 .showcase h1{
-    font-size:4rem;
+    font-size:3rem;
 }
 
 .showcase p{
     font-size:1.3rem;
+}
+
+@media only screen and (max-width:800px){
+    .showcase h1{
+        font-size:1.5rem;
+    
+    }
+    
+    .showcase p{
+        font-size:1rem;
+    
+    }
+}
+
+@media only screen and (max-width:331px){
+    .showcase h1{
+        font-size:1.5rem;
+    
+    }
+    
+    .showcase p{
+        font-size:1rem;
+    
+    }
 }
 
 .btn{
@@ -89,7 +110,7 @@ z-index:-1;
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:180%;
 z-index:-1;
 }
 .project .box-container{
@@ -161,6 +182,7 @@ z-index:-1;
  .contact-section{
     position:relative;
     min-height:100vh;
+    min-width:100vh;
     padding:50px 100px;
     display:flex;
     justify-content: center;
@@ -188,7 +210,7 @@ z-index:-1;
 }
 
 .contact-container{
-    width:50%;
+    width:80vh;
     display:flex;
     justify-content: center; 
     align-items:center;
