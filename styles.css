@@ -140,6 +140,11 @@ z-index:-1;
 .text.show-more .more-text{
     display:inline;
   
+  
+}
+
+.paragraph-wrapper{
+    background-color:rgba(24, 39, 51, 0.45) ;
 }
 
 .contact-section:before{
