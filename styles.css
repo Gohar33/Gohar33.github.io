@@ -1,0 +1,228 @@
+:root{
+    --primary-color:rgba(181, 104, 211, 0.55);
+    --overlay-color:rgba(24, 39, 51, 0.85);
+    --menu-speed:0.75s;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    line-height:1.4;
+}
+
+.container{
+    max-width:960px;
+    margin:auto;
+    overflow:hidden;
+    padding:0 3rem;
+}
+
+.showcase{
+    background-color:var(--primary-color);
+    color:#fff;
+    height:100vh;
+    position:relative;
+}
+
+.showcase:before{
+    content:'';
+    background:url("https://cdn.dribbble.com/users/3614863/screenshots/6511060/d88abb60812877.5a59fb5224959.png") no-repeat center center/cover;
+    background:url("https://ak.picdn.net/shutterstock/videos/1022384530/thumb/1.jpg") no-repeat center center/cover;
+    background:url("https://cdn.dribbble.com/users/3614863/screenshots/6511060/d88abb60812877.5a59fb5224959.png") no-repeat center center/cover;
+    /* background: url("https://images.unsplash.com/photo-1569467869790-f11ae1eb2f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80") no-repeat center center/cover; */
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+z-index:-1;
+}
+
+.showcase .showcase-inner{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height:100%;
+}
+
+.showcase h1{
+    font-size:4rem;
+}
+
+.showcase p{
+    font-size:1.3rem;
+}
+
+.btn{
+    display:inline-block;
+    border:none;
+    background-color: var(--primary-color);
+    color:#fff;
+    padding:0.75rem 1.5rem;
+    margin-top:1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in;
+    cursor:pointer;
+
+}
+
+.btn:hover{
+    opacity:0.7;
+}
+
+.project, .contact-section{
+    min-height:100vh;
+    background-color:var(--primary-color);
+}
+
+.project:before{
+    content:'';
+    background:url("https://images.unsplash.com/photo-1534689358699-037f71a746e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80") no-repeat center center/cover;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+z-index:-1;
+}
+.project .box-container{
+    display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  padding-top:2rem;
+}
+
+.project .box-container .box{
+   background:rgba(60, 75, 87, 0.85);
+   margin:2rem;
+   padding:1rem;
+   width:30rem;
+   text-align: center;
+   box-shadow:  10px 5px 5px rgba(6,7,9, 0.6);
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.project .box-container .box h3 {
+    font-size:2rem;
+    padding:1rem;
+    color:#fff;
+}
+
+.project .box-container .box p{
+    font-size:1rem;
+    color:#fff;
+}
+
+.project .box-container .box a{
+  text-decoration: none;
+}
+
+.project .box-container .box:hover{
+    background-color: rgba(181, 104, 211, 0.25);
+  
+}
+
+.more-text{
+    display: none;
+}
+
+.text.show-more .more-text{
+    display:inline;
+}
+
+.contact-section:before{
+    content:'';
+    background:url("https://img.freepik.com/free-photo/pink-jellyfish-swims-blue-ocean_255485-13.jpg?size=626&ext=jpg") no-repeat center center/cover;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+z-index:-1;
+}
+
+ .contact-section{
+    position:relative;
+    min-height:100vh;
+    padding:50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-section .content{
+    max-width:800px;
+    text-align:center;
+
+}
+
+
+.contact-section .content h2{
+    font-size:36px;
+    color:#fff;
+    font-weight:800;  
+}
+
+.contact-section .content p{
+    font-size:26px;
+    color:#fff;
+    font-weight:500;  
+}
+
+.contact-container{
+    width:50%;
+    display:flex;
+    justify-content: center; 
+    align-items:center;
+    margin-top:30px;
+    background-color:var(--primary-color)
+}
+
+ .contact-container .contact-info{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-container .contact-info .contact-box{
+  
+     padding:18px 0;
+    display:flex;
+   
+}
+
+.contact-container .contact-info .contact-box .icon{
+   min-width:60px;
+   height:52px;
+   background:#fff;
+   justify-content: center;
+   align-items:center;
+   border-radius: 50%;
+padding-left:14px;
+   font-size:2rem;
+}
+
+.contact-container .contact-info .contact-box .text{
+    display:flex;
+    margin-left:30px;
+    font-size:1.3rem;
+    color:#fff;
+    flex-direction:column;
+    font-weight:300;
+}  
+
+.contact-container .contact-info .contact-box a{
+  text-decoration:none;
+  color:rgb(240, 104, 240);
+}  
