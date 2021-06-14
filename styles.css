@@ -63,13 +63,10 @@ z-index:-1;
 
 .more-text{
     display: none;
-   
 }
 
 .text.show-more .more-text{
     display:inline;
-  
-  
 }
 
 .paragraph-wrapper{
@@ -88,7 +85,6 @@ z-index:-1;
     text-decoration: none;
     transition: opacity 1s ease-in;
     cursor:pointer;
-
 }
 
 .btn:hover{
@@ -110,8 +106,9 @@ z-index:-1;
     left:0;
     width:100%;
     min-height:100vh;
-z-index:-1;
+    z-index:-1;
 }
+
 .project .box-container{
     display:flex;
   align-items: center;
@@ -149,7 +146,6 @@ z-index:-1;
 
 .project .box-container .box:hover{
     background-color: rgba(181, 104, 211, 0.25);
-  
 }
 
 /* Contact page */
@@ -160,7 +156,7 @@ z-index:-1;
     position:absolute;
     top:0;
     left:0;
-    width:100%;
+    min-width:100vh;
     height:100%;
 z-index:-1;
 }
@@ -178,7 +174,6 @@ z-index:-1;
 .contact-section .content{
     max-width:800px;
     text-align:center;
-
 }
 
 
@@ -219,7 +214,7 @@ z-index:-1;
    justify-content: center;
    align-items:center;
    border-radius: 50%;
-padding-left:15px;
+   padding-left:15px;
    font-size:2rem;
 }
 
@@ -274,11 +269,9 @@ padding-left:15px;
 }
 }
 
-@media only screen and (max-width:375px) and (min-width:414px){
+@media only screen and (max-width:385px) and (min-width:414px){
     .project:before{
         height:auto!important;
     min-height:182vh;
     }
-
-
 }
