@@ -209,12 +209,13 @@ z-index:-1;
 
 .contact-container .contact-info .contact-box .icon{
    min-width:60px;
-   height:52px;
+   height:60px;
    background:#fff;
    justify-content: center;
    align-items:center;
    border-radius: 50%;
-   padding-left:15px;
+   padding-left:17px;
+   padding-top:5px;
    font-size:2rem;
 }
 
